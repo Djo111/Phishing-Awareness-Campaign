@@ -1,5 +1,34 @@
 .App {
   text-align: center;
+  display: flex;
+   background-color: #282c34
+   
+}
+
+
+
+.resizable-input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: border-color 0.3s ease-in-out;
+  resize: none; /* Disable textarea resizing handle */
+ overflow-y: auto; /* Enable scrolling */
+  height: auto; /* Allow textarea to expand automatically */
+}
+.class1 {
+  width: 80%;
+}
+
+
+.resizable-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .App-logo {
@@ -35,4 +64,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.split-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+}
+
+.left-side {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.right-side {
+  background-color: #282c34;
+  padding: 20px;
+   display: flex;
+  flex-direction: column;
+
+ 
+}
+
+
+.container {
+  background-color: #c0c0c06b;
+  margin-bottom: 10px;
+  padding: 10px;
+  flex-grow: 1; /* Allow containers to grow and take available space */
+  overflow: hidden; /* Hide content that overflows */
+  display: flex;
+  flex-direction: column;
+  
+
+}
+.container-content {
+  flex: 1; /* Allow content to grow and take available space */
+  overflow: auto; /* Enable scrolling for container content */
+
 }
